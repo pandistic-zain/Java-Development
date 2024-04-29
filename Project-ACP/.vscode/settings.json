@@ -1,0 +1,11 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\Zain Ul Abdeen\\Desktop\\UNIVERSITY (5th)\\libraries\\activation-jaf1.1.1.jar",
+        "c:\\Users\\Zain Ul Abdeen\\Desktop\\UNIVERSITY (5th)\\libraries\\javax.mail.jar",
+        "c:\\Users\\Zain Ul Abdeen\\Desktop\\UNIVERSITY (5th)\\libraries\\twilio-10.0.0-rc.4-jar-with-dependencies.jar",
+        "storemanagementsystem/src/storemanagementsystem/libraries/activation-jaf1.1.1.jar",
+        "storemanagementsystem/src/storemanagementsystem/libraries/javax.mail.jar",
+        "storemanagementsystem/src/storemanagementsystem/libraries/twilio-10.0.0-rc.4-jar-with-dependencies.jar"
+    ]
+}
