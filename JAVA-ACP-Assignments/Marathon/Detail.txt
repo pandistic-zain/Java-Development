@@ -1,0 +1,30 @@
+This Java program, named "Marathon," is designed to calculate and display the positions of runners in a marathon race based on their finishing times. Let's break down the code step by step:
+
+1. Import Statements:
+   - The code begins by importing necessary Java classes, such as `Arrays`, `Comparator`, and `Map`, from the `java.util` package.
+
+2. Main Method:
+   - The `main` method is the entry point of the program. It initializes two arrays: `names` and `times`. The `names` array contains the names of the runners, and the `times` array contains the time it took each runner to complete the marathon.
+
+3. Fastest_Runner Function:
+   - `Fastest_Runner` is a function that takes an array of marathon times as its parameter and returns the index of the fastest runner (the runner with the shortest time).
+
+4. Second_Fastest_Runner Function:
+   - `Second_Fastest_Runner` is a function that takes an array of marathon times and the index of the fastest runner as parameters. It returns the index of the second-fastest runner (the runner with the second shortest time).
+
+5. Custom Comparator:
+   - A custom `Comparator` is created to sort the `times` array in ascending order. This `Comparator` is defined to compare two integers by subtracting one from the other, effectively sorting the array in ascending order.
+
+6. Sorting:
+   - The `times` array is converted to an array of `Integer` objects, sorted using the custom `Comparator`, and stored in the `sortedTimes` array. This sorting is done to determine the positions of the runners.
+
+7. Mapping Names to Times:
+   - A `Map` named `nameByTime` is created to associate the runner's time with their name. It iterates through the `times` and `names` arrays, creating a mapping between the two.
+
+8. Printing Results:
+   - The program prints a table of the positions, names, and times of the runners. It iterates through the `sortedTimes` array, looks up the name associated with each time in the `nameByTime` map, and prints the results in a formatted table.
+
+9. Output:
+   - The output displays the position, name, and time in minutes for each runner, with the fastest runner listed first and the second-fastest runner listed second.
+
+Overall, the program reads marathon runner data, finds the fastest and second-fastest runners, sorts the runners by their times, and then displays the positions and times of all the runners in a tabular format. This code provides a simple example of using arrays, sorting, and mapping in Java.
