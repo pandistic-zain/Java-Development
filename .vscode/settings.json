@@ -1,0 +1,8 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "Project-ACP/storemanagementsystem/src/storemanagementsystem/libraries/activation-jaf1.1.1.jar",
+        "Project-ACP/storemanagementsystem/src/storemanagementsystem/libraries/javax.mail.jar",
+        "Project-ACP/storemanagementsystem/src/storemanagementsystem/libraries/twilio-10.0.0-rc.4-jar-with-dependencies.jar"
+    ]
+}
