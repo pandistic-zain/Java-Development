@@ -8,6 +8,7 @@ import java.nio.file.StandardCopyOption;
 import java.util.Scanner;
 
 public class FileMover {
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
