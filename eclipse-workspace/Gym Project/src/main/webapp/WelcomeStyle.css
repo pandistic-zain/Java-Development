@@ -130,34 +130,35 @@ header {
 .hacker-text h1 {
   font-size: 3.2rem;
   padding: 12px;
-  margin-bottom: 170px;
+  margin-bottom: 170px; /* Adjust margin as needed */
   color: transparent; /* Hide text initially */
   text-align: center;
   font-family: "Bree Serif", serif;
-  animation: text-appear 7s steps(20, end) forwards; 
+  white-space: nowrap; 
+  overflow: hidden; /* Hide overflow to prevent text wrapping */
+  animation: text-appear 5s steps(20, end) forwards; 
   border-right: 2px solid white;
   box-sizing: border-box;
-  white-space: nowrap; 
-  mix-blend-mode: difference; 
+  mix-blend-mode: difference; /* Change mix-blend-mode on hover */
 }
 
 @keyframes text-appear {
   0% {
     width: 0; /* Start with width 0 to simulate typing effect */
+    color: transparent; /* Start with transparent text color */
   }
   100% {
     width: 100%; /* Full width to show complete text */
+    color: white; /* Change text color to white */
+    border-right: 2px solid transparent;
   }
 }
 
-.hacker-text .highlight {
-  color: white; /* Change text color to white when highlighted */
-  mix-blend-mode: exclusion; /* Change mix-blend-mode when highlighted */
-}
 .hacker-text h1:hover {
   color: white; /* Change text color to white on hover */
   mix-blend-mode: exclusion; /* Change mix-blend-mode on hover */
 }
+
 
 #Home-Section p {
   color: white;
