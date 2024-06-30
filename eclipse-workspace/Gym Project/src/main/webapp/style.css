@@ -1,0 +1,309 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+}
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: black;
+  opacity: 0.9;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  justify-content: space-between; /* Distribute items at both ends */
+  align-items: center;
+  margin: auto;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+  margin: 10px 34px;
+  color: #f2f2f2;
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
+
+#logo img {
+  height: 70px;
+  margin: 0px 10px;
+  filter: invert(100%);
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhai", cursive;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 2px 20px;
+  margin-top: -5px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Login and Register Buttons */
+.admin-area {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+#loginBtn,
+#registerBtn {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #f2f2f2;
+  color: #000000;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#loginBtn:hover,
+#registerBtn:hover {
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bolder;
+  text-decoration: underline;
+  outline: 2px solid #ffffff; /* Adding white outline */
+}
+
+/* Home Section */
+#Home-Section {
+  display: flex;
+  position: relative; /*Set position to enable absolute positioning of pseudo-element */
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 100vh; /* Adjusted height to cover the whole screen */
+  justify-content: center;
+  align-items: center;
+}
+
+#Home-Section::before {
+  content: "";
+  position: absolute;
+  background: url("Pictures/bg.gif") no-repeat center center/cover;
+  height: 100%; /* Adjusted height to cover the whole screen */
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+#Home-Section h1 {
+  color: white;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+
+#Home-Section p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Bree Serif", serif;
+}
+
+/* Services Section */
+#Services-Section {
+  height: auto; /* Adjusted height to cover the whole screen */
+}
+
+#services {
+  margin: 34px;
+  display: flex;
+}
+
+#services .box {
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 1px 15px;
+  border-radius: 28px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+#services .box img {
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+
+#services .box p {
+  font-family: "Bree Serif", serif;
+}
+
+/* Contact Section */
+#Contact-Section {
+  height: auto;
+  position: relative; /* Set position to enable absolute positioning of pseudo-element */
+}
+#Contact-Section::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.6;
+  background: url("Pictures/contact.jpg") no-repeat top center/cover; /* Set background image properties */
+  filter: blur(12px);
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+  z-index: -1;
+}
+
+#contact-box form {
+  width: 60%;
+  padding: 20px;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid brown;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Style the submit button */
+#submit_form {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+#contact-box label {
+  display: block;
+  font-size: 1.1rem;
+  font-family: "Bree Serif", serif;
+  margin-bottom: 8px;
+}
+
+/* Partners Section */
+#Partners-Section {
+  position: relative;
+}
+
+#Partners-Section::before {
+  content: "";
+  position: absolute;
+  background: url("Pictures/background.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  filter: blur(12px);
+}
+
+#Partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Partners-item {
+  padding: 34px;
+}
+
+#Partners img {
+  height: 124px;
+}
+
+/* Utility Classes */
+.h-primary {
+  font-family: "Bree Serif", serif;
+  font-size: 3.2rem;
+  padding: 12px;
+}
+
+.h-secondary {
+  font-family: "Bree Serif", serif;
+  font-size: 2.3rem;
+  padding: 12px;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 4px solid white;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  touch-action: pinch-zoom;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: black;
+  background-color: white;
+  transform: scale(1.5);
+  border: 4px solid brown;
+  border-radius: 9px;
+  text-shadow: -1px -1px 2px brown;
+}
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between; /* Align content with space between elements */
+  align-items: center; /* Vertically align content */
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+/* Optionally, add a container for personal logos to center them */
+.personal-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: invert(100%);
+}
+.personal-logos img {
+  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+}
+.center {
+  text-align: center;
+}
