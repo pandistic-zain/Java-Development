@@ -1,22 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-pageEncoding="UTF-8" %>
-<!DOCTYPE html>
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+  <!DOCTYPE html>
+  <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>G-7 Fitness-Club</title>
     <link rel="stylesheet" href="WelcomeStyle.css" />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 790px)"
-      href="phone.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" media="screen and (max-width: 790px)" href="phone.css" />
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet" />
     <link rel="icon" href="Pictures/LogoVector.png" type="image/png" />
     <script src="script.js" defer></script>
   </head>
@@ -66,13 +59,9 @@ pageEncoding="UTF-8" %>
             <img src="Pictures/1.png" alt="" />
             <h2 class="h-secondary center">Gym Wears</h2>
             <p class="center">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
-              culpa suscipit error Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit. Et qui, repudiandae similique nam, recusandae
-              quidem ab asperiores ex, aut fugit labore veritatis facere? sint
-              delectus ab dolorum nam. Debitis facere, incidunt voluptates eos,
-              mollitia voluptatem iste sunt voluptas beatae facilis labore,
-              omnis sint quae eum.
+              Our gym wears are designed for comfort and performance. Whether you're
+              lifting weights or doing cardio, our collection includes breathable
+              fabrics and ergonomic designs to support your workout routine.
             </p>
           </div>
           <!-- Service Box 2 -->
@@ -80,13 +69,10 @@ pageEncoding="UTF-8" %>
             <img src="Pictures/2.png" alt="" />
             <h2 class="h-secondary center">Food Supplements</h2>
             <p class="center">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
-              culpa suscipit error Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Unde laudantium a incidunt animi ad, ab
-              dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
-              sint delectus ab dolorum nam. Debitis facere, incidunt voluptates
-              eos, mollitia voluptatem iste sunt voluptas beatae facilis labore,
-              omnis sint quae eum.
+              Enhance your fitness journey with our range of food supplements.
+              Carefully selected for quality and effectiveness, our supplements
+              provide essential nutrients to support muscle growth, recovery, and
+              overall health.
             </p>
           </div>
           <!-- Service Box 3 -->
@@ -94,17 +80,15 @@ pageEncoding="UTF-8" %>
             <img src="Pictures/3.png" alt="" />
             <h2 class="h-secondary center">Private Trainer</h2>
             <p class="center">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
-              culpa suscipit error Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Necessitatibus provident fugiat aliquam minima
-              at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas!
-              Quis. sint delectus ab dolorum nam. Debitis facere, incidunt
-              voluptates eos, mollitia voluptatem iste sunt voluptas beatae
-              facilis labore, omnis sint quae eum.
+              Personalize your training experience with our dedicated private
+              trainers. Certified professionals will guide you through tailored
+              workouts, focusing on your goals and ensuring proper form and technique
+              for maximum results.
             </p>
           </div>
         </div>
       </section>
+
       <!-- Contact Section -->
       <section id="Contact-Section">
         <h1 class="h-primary center">Suggestion For Us</h1>
@@ -113,22 +97,12 @@ pageEncoding="UTF-8" %>
             <!-- Name Input -->
             <div class="form-group">
               <label for="name">Name: </label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Enter your name"
-              />
+              <input type="text" name="name" id="name" placeholder="Enter your name" />
             </div>
             <!-- Email Input -->
             <div class="form-group">
               <label for="email">Email: </label>
-              <input
-                type="email"
-                name="name"
-                id="email"
-                placeholder="Enter your email"
-              />
+              <input type="email" name="name" id="email" placeholder="Enter your email" />
             </div>
             <!-- Phone Input -->
             <div class="form-group">
@@ -138,12 +112,7 @@ pageEncoding="UTF-8" %>
             <!-- Message Input -->
             <div class="form-group">
               <label for="message">Message: </label>
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-              ></textarea>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
             </div>
             <!-- Submit Button -->
             <div id="submit_form">
@@ -182,17 +151,10 @@ pageEncoding="UTF-8" %>
         Copyright &copy; www.Fitness-Club.com. All rights reserved!
       </div>
       <div class="personal-logos">
-        <img
-          src="Pictures/icons8-instagram.gif"
-          alt="Instagram"
-          id="Instagram"
-        />
-        <img
-          src="Pictures/icons8-linkedin-logo.gif"
-          alt="Linkd-In"
-          id="Linkdin"
-        />
+        <img src="Pictures/icons8-instagram.gif" alt="Instagram" id="Instagram" />
+        <img src="Pictures/icons8-linkedin-logo.gif" alt="Linkd-In" id="Linkdin" />
       </div>
     </footer>
   </body>
-</html>
+
+  </html>
