@@ -77,7 +77,7 @@ header {
 
 #logoutBtn {
   padding: 10px 15px;
-  font-size: 1rem;
+  font-size: 1.0rem;
   background-color: #f2f2f2;
   color: #000000;
   font-weight: bold;
@@ -94,6 +94,7 @@ header {
   text-decoration: underline;
   outline: 2px solid #ffffff; /* Adding white outline */
 }
+
 /* Home Section */
 #Home-Section {
   display: flex;
@@ -133,11 +134,11 @@ header {
   color: transparent; /* Hide text initially */
   text-align: center;
   font-family: "Bree Serif", serif;
-  animation: text-appear 7s steps(20, end) forwards;
+  animation: text-appear 7s steps(20, end) forwards; 
   border-right: 2px solid white;
   box-sizing: border-box;
-  white-space: nowrap;
-  mix-blend-mode: difference;
+  white-space: nowrap; 
+  mix-blend-mode: difference; 
 }
 
 @keyframes text-appear {
@@ -153,7 +154,18 @@ header {
   color: white; /* Change text color to white when highlighted */
   mix-blend-mode: exclusion; /* Change mix-blend-mode when highlighted */
 }
+.hacker-text h1:hover {
+  color: white; /* Change text color to white on hover */
+  mix-blend-mode: exclusion; /* Change mix-blend-mode on hover */
+}
 
+#Home-Section p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Bree Serif", serif;
+  mix-blend-mode: difference;
+}
 /* Services Section */
 #Services-Section {
   height: auto; /* Adjusted height to cover the whole screen */

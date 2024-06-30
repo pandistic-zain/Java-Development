@@ -1,8 +1,30 @@
 (function () {
   "use strict";
 
-  // Wait for the DOM to be ready
   document.addEventListener("DOMContentLoaded", function () {
+    const h1Element = document.querySelector('.hacker-text h1');
+
+    h1Element.addEventListener("mousemove", function(event) {
+      const text = event.target.textContent.trim();
+      const words = text.split(' ');
+
+      // Loop through each word and check if the mouse position is within its bounds
+      words.forEach((word) => {
+        const rect = event.target.getClientRects()[0];
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+
+        // Check if mouse position is within the bounds of the word
+        if (x >= rect.width * 0.1 && x <= rect.width * 0.9 && y >= 0 && y <= rect.height) {
+          event.target.innerHTML = text.replace(word, `<span class="highlight">${word}</span>`);
+        }
+      });
+    });
+
+    h1Element.addEventListener("mouseleave", function() {
+      h1Element.innerHTML = h1Element.textContent.trim(); // Reset to original text
+    });
+
     // Smooth scroll for navigation links
     const navLinks = document.querySelectorAll("#navbar ul li a");
 
@@ -16,9 +38,7 @@
       const targetElement = document.getElementById(targetId);
 
       window.scrollTo({
-        top:
-          targetElement.offsetTop -
-          document.getElementById("navbar").offsetHeight,
+        top: targetElement.offsetTop - document.getElementById("navbar").offsetHeight,
         behavior: "smooth",
       });
     }
@@ -29,20 +49,14 @@
     form.addEventListener("submit", function (event) {
       event.preventDefault();
 
-      // Fetch form data
-      const name = document.getElementById("name").value;
-      const email = document.getElementById("email").value;
-      const phone = document.getElementById("phone").value;
-      const message = document.getElementById("message").value;
-
       // Placeholder for sending data to a server (backend)
       form.reset();
 
-      // Optional
+      // Optional: Alert for form submission success
       alert("Form submitted successfully!");
     });
 
-    // Services-Box handling
+    // Services-Box handling (redirect URLs)
     const wears = document.getElementById("Wears");
     const supplements = document.getElementById("Supplements");
     const trainer = document.getElementById("Trainer");
@@ -59,7 +73,7 @@
       window.location.href = "https://www.movenfit.pk/";
     });
 
-    // Personal-Logo handling
+    // Personal-Logo handling (redirect URLs)
     const Instagram = document.getElementById("Instagram");
     const Linkdin = document.getElementById("Linkdin");
 
@@ -68,47 +82,14 @@
     });
 
     Linkdin.addEventListener("click", function () {
-      window.location.href =
-        "https://www.linkedin.com/in/zain-ul-abideen-b9215a283/";
+      window.location.href = "https://www.linkedin.com/in/zain-ul-abideen-b9215a283/";
     });
 
-    // Register-Online handling
+    // Register-Online button handling (redirect URL)
     const registerBtn = document.getElementById("Register-btn");
 
     registerBtn.addEventListener("click", function () {
       window.location.href = "https://forms.gle/w1XZWim3oTgB88qt5";
-    });
-  });
-  document.addEventListener("DOMContentLoaded", function () {
-    const h1Element = document.querySelector(".hacker-text h1");
-
-    h1Element.addEventListener("mousemove", function (event) {
-      const text = event.target.textContent.trim();
-      const words = text.split(" ");
-
-      // Loop through each word and check if the mouse position is within its bounds
-      words.forEach((word) => {
-        const rect = event.target.getClientRects()[0];
-        const x = event.clientX - rect.left;
-        const y = event.clientY - rect.top;
-
-        // Check if mouse position is within the bounds of the word
-        if (
-          x >= rect.width * 0.1 &&
-          x <= rect.width * 0.9 &&
-          y >= 0 &&
-          y <= rect.height
-        ) {
-          event.target.innerHTML = text.replace(
-            word,
-            `<span class="highlight">${word}</span>`
-          );
-        }
-      });
-    });
-
-    h1Element.addEventListener("mouseleave", function () {
-      h1Element.innerHTML = h1Element.textContent.trim(); // Reset to original text
     });
   });
 })();
