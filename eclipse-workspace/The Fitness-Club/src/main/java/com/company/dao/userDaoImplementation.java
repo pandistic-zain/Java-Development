@@ -1,11 +1,11 @@
 package com.company.dao;
 
-import com.company.model.user;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
+import com.company.model.user;
 
 public class userDaoImplementation implements userDao {
     @Override

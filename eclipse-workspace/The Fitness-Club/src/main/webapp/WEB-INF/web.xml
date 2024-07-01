@@ -11,26 +11,6 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>RServlet</display-name>
-    <servlet-name>RServlet</servlet-name>
-    <servlet-class>com.company.servlet.RServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>RServlet</servlet-name>
-    <url-pattern>/RServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>LServlet</display-name>
-    <servlet-name>LServlet</servlet-name>
-    <servlet-class>com.company.servlet.LServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>LServlet</servlet-name>
-    <url-pattern>/LServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
     <display-name>LoginServlet</display-name>
     <servlet-name>LoginServlet</servlet-name>
     <servlet-class>com.company.servlet.LoginServlet</servlet-class>
@@ -48,5 +28,15 @@
   <servlet-mapping>
     <servlet-name>RegisterServlet</servlet-name>
     <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LogoutServlet</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.company.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
   </servlet-mapping>
 </web-app>

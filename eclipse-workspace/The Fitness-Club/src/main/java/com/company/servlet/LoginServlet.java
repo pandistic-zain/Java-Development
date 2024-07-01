@@ -1,10 +1,10 @@
 package com.company.servlet;
 
+import java.io.IOException;
+
 import com.company.dao.userDao;
 import com.company.dao.userDaoImplementation;
 import com.company.model.user;
-
-import java.io.IOException;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Login/Register - G-7 Fitness-Club</title>
+    <title>Register - G-7 Fitness-Club</title>
     <link rel="icon" href="Pictures/LogoVector.png" type="image/png" />
     <link rel="stylesheet" href="login_register.css" />
   </head>
@@ -47,7 +47,24 @@
         <%-- Display error message if registration fails --%>
         <% String error = request.getParameter("error");
            if (error != null && error.equals("1")) { %>
-            <p style="color: red;">Registration failed. Please try again.</p>
+            <p style="background-color: #f8d7da;
+  color: #721c24;
+  border: 4px solid #f5c6cb;
+    border-radius: 10px;
+  margin:15px;
+  padding:12px;
+            ">Registration failed. Please try again.</p>
+        <% } %>
+          <%-- Display error message if Register Successful --%>
+        <% String rs = request.getParameter("registration");
+            if (rs != null && rs.equals("success")) { %>
+                <p style="  background-color: #d4edda;
+  color: #155724;
+  border: 4px solid #c3e6cb;
+    border-radius: 10px;
+  margin:15px;
+  padding:12px;
+  white-space:nowrap;">Registration is Successful. Please Login.</p>
         <% } %>
         </div>
       </section>
