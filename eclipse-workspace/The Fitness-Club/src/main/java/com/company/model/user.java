@@ -1,4 +1,4 @@
-package myPackage;
+package com.company.model;
 
 public class user {
     private String username;

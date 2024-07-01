@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>G-7 Fitness-Club</title>
     <link rel="stylesheet" href="WelcomeStyle.css" />
-    <link rel="stylesheet" media="screen and (max-width: 790px)" href="phone.css" />
+    <link rel="stylesheet" media="screen and (max-width: 790px)" href="WelcomePhone.css" />
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet" />
     <link rel="icon" href="Pictures/LogoVector.png" type="image/png" />
     <script src="script.js" defer></script>
@@ -29,7 +29,7 @@
           <li class="item"><a href="#Partners-Section">Our Partners</a></li>
         </ul>
         <div class="admin-area">
-          <button id="logoutBtn">Log-Out</button>
+          <button id="logoutBtn">LogOut</button>
         </div>
       </nav>
     </header>

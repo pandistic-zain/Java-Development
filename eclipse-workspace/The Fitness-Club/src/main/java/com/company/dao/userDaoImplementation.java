@@ -1,4 +1,6 @@
-package myPackage;
+package com.company.dao;
+
+import com.company.model.user;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -44,6 +46,7 @@ public class userDaoImplementation implements userDao {
             return false;
         }
     }
+
     @Override
     public user getUserByEmail(String email) {
         String query = "SELECT * FROM users WHERE email = ?";

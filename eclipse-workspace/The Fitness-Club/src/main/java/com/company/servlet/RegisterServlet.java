@@ -1,4 +1,8 @@
-package myPackage;
+package com.company.servlet;
+
+import com.company.dao.userDao;
+import com.company.dao.userDaoImplementation;
+import com.company.model.user;
 
 import java.io.IOException;
 
@@ -9,7 +13,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/register")
-public class RServlet extends HttpServlet {
+public class RegisterServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     private userDao userDao;
@@ -20,7 +24,7 @@ public class RServlet extends HttpServlet {
     }
 
     @Override
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String email = request.getParameter("email");

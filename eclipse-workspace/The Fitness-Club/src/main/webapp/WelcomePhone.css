@@ -1,0 +1,129 @@
+/* Phone CSS (max-width: 790px) */
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: black;
+  opacity: 0.9;
+  padding: 10px 20px;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+}
+
+#logo {
+  margin: 10px;
+  color: #f2f2f2;
+}
+
+#logo img {
+  height: 50px;
+}
+
+#navbar ul {
+  display: none;
+}
+
+.admin-area {
+  display: none;
+}
+
+/* Home Section */
+#Home-Section {
+  padding: 30px;
+}
+
+.hacker-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  margin-top: 100px; /* Adjusted for smaller screen */
+   white-space: rap;
+}
+
+.hacker-text h1:hover {
+  mix-blend-mode: unset; /* Reset mix-blend-mode on hover */
+}
+
+#Home-Section p {
+  font-size: 1.2rem;
+}
+
+/* Services Section */
+#Services-Section {
+  padding: 20px;
+}
+
+#services {
+  flex-direction: column;
+}
+
+#services .box {
+  padding: 20px;
+  margin: 10px 0;
+}
+
+#services .box img {
+  height: auto;
+}
+
+/* Contact Section */
+#Contact-Section {
+  padding: 20px;
+}
+
+#contact-box form {
+  width: 100%;
+}
+
+#contact-box input,
+#contact-box textarea {
+  font-size: 1rem;
+  padding: 8px;
+}
+
+/* Partners Section */
+#Partners-Section {
+  padding: 20px;
+}
+
+#Partners {
+  flex-wrap: wrap;
+}
+
+#Partners img {
+  height: 80px;
+  padding: 10px;
+}
+
+/* Utility Classes */
+.h-primary {
+  font-size: 2.5rem;
+}
+
+.h-secondary {
+  font-size: 1.8rem;
+}
+
+.btn {
+  padding: 8px 16px;
+  font-size: 1rem;
+  margin: 10px;
+}

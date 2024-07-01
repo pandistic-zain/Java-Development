@@ -20,7 +20,7 @@
       <section id="login-register-section">
         <div class="form-container">
           <h1>Register</h1>
-          <form action="RServlet" method="post">
+          <form action="RegisterServlet" method="post">
             <div class="form-group">
               <label for="register-name">Name:</label>
               <input type="text" name="username" id="register-name" required />
@@ -42,6 +42,13 @@
               <input type="submit" value="Register" class="btn" />
             </div>
           </form>
+           <p><a href="index.jsp">Back to Home</a></p>
+    
+        <%-- Display error message if registration fails --%>
+        <% String error = request.getParameter("error");
+           if (error != null && error.equals("1")) { %>
+            <p style="color: red;">Registration failed. Please try again.</p>
+        <% } %>
         </div>
       </section>
     </main>

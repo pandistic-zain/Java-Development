@@ -1,4 +1,6 @@
-package myPackage;
+package com.company.dao;
+
+import com.company.model.user;
 
 public interface userDao {
     boolean addUser(user user);

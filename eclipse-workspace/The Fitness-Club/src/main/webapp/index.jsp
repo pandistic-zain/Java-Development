@@ -44,14 +44,14 @@
       <!-- Home Section -->
       <section id="Home-Section">
         <h1 class="h-primary">Welcome to Fitness-Club</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
-          dolorum numquam minus.
+         <p>
+          At Fitness-Club, we believe in empowering our members through fitness
+          and wellness. Our state-of-the-art facilities and expert trainers
+          ensure that your fitness journey is both enjoyable and effective.
         </p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
       </section>
 
-      <!-- Services Section -->
+       <!-- Services Section -->
       <section id="Services-Section">
         <h1 class="h-primary center">Our Services</h1>
         <div id="services">
@@ -60,13 +60,9 @@
             <img src="Pictures/1.png" alt="" />
             <h2 class="h-secondary center">Gym Wears</h2>
             <p class="center">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
-              culpa suscipit error Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit. Et qui, repudiandae similique nam, recusandae
-              quidem ab asperiores ex, aut fugit labore veritatis facere? sint
-              delectus ab dolorum nam. Debitis facere, incidunt voluptates eos,
-              mollitia voluptatem iste sunt voluptas beatae facilis labore,
-              omnis sint quae eum.
+              Our gym wears are designed for comfort and performance. Whether you're
+              lifting weights or doing cardio, our collection includes breathable
+              fabrics and ergonomic designs to support your workout routine.
             </p>
           </div>
           <!-- Service Box 2 -->
@@ -74,13 +70,10 @@
             <img src="Pictures/2.png" alt="" />
             <h2 class="h-secondary center">Food Supplements</h2>
             <p class="center">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
-              culpa suscipit error Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Unde laudantium a incidunt animi ad, ab
-              dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
-              sint delectus ab dolorum nam. Debitis facere, incidunt voluptates
-              eos, mollitia voluptatem iste sunt voluptas beatae facilis labore,
-              omnis sint quae eum.
+              Enhance your fitness journey with our range of food supplements.
+              Carefully selected for quality and effectiveness, our supplements
+              provide essential nutrients to support muscle growth, recovery, and
+              overall health.
             </p>
           </div>
           <!-- Service Box 3 -->
@@ -88,13 +81,10 @@
             <img src="Pictures/3.png" alt="" />
             <h2 class="h-secondary center">Private Trainer</h2>
             <p class="center">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
-              culpa suscipit error Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Necessitatibus provident fugiat aliquam minima
-              at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas!
-              Quis. sint delectus ab dolorum nam. Debitis facere, incidunt
-              voluptates eos, mollitia voluptatem iste sunt voluptas beatae
-              facilis labore, omnis sint quae eum.
+              Personalize your training experience with our dedicated private
+              trainers. Certified professionals will guide you through tailored
+              workouts, focusing on your goals and ensuring proper form and technique
+              for maximum results.
             </p>
           </div>
         </div>
@@ -127,8 +117,7 @@
             <!-- Phone Input -->
             <div class="form-group">
               <label for="phone">Phone Number: </label>
-              <input
-                type="phone"
+              <input              
                 name="name"
                 id="phone"
                 placeholder="Enter your phone"
