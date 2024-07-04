@@ -24,7 +24,7 @@
 		<nav id="navbar">
 			<div id="logo">
 				<img src="Pictures/logo.png" alt="Fitness-Club.com" />
-				<h3>G-7 Fitness-Club</h3>
+				<h3>The Fitness-Club</h3>
 			</div>
 			<ul>
 				<li class="item"><a href="#Home-Section">Home</a></li>
