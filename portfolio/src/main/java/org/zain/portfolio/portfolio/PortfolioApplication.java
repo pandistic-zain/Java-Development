@@ -1,4 +1,4 @@
-package com.example.Portfolio;
+package org.zain.portfolio.portfolio;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
