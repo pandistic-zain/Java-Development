@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Baloo Bhai", cursive;
 }
 
 html {
@@ -59,7 +60,6 @@ header {
 }
 
 .form-container h1 {
-  font-family: "Bree Serif", serif;
   font-size: 2.5rem;
   margin-bottom: 20px;
   text-align: center;
@@ -72,7 +72,6 @@ header {
 .form-group label {
   display: block;
   font-size: 1.1rem;
-  font-family: "Baloo Bhai", cursive;
   margin-bottom: 8px;
 }
 
@@ -100,5 +99,27 @@ header {
   background-color: white;
   color: brown;
   border: 2px solid brown;
+  transform: scale(1.05);
+}
+/* Back to Home link */
+p {
+  text-align: center; /* Center aligns text horizontally */
+}
+
+p a {
+  display: inline-block;
+  padding: 10px;
+  background-color: brown;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid brown; /* Initially no border */
+}
+
+p a:hover {
+  background-color: white;
+  color: brown;
+  border: 2px solid brown;/* Border color changes on hover */
   transform: scale(1.05);
 }

@@ -6,9 +6,11 @@
     // Smooth scroll for navigation links
     const navLinks = document.querySelectorAll("#navbar ul li a");
 
-    navLinks.forEach((link) => {
-      link.addEventListener("click", smoothScroll);
-    });
+    if (window.innerWidth > 790) {
+      navLinks.forEach((link) => {
+        link.addEventListener("click", smoothScroll);
+      });
+    }
 
     function smoothScroll(event) {
       event.preventDefault();
@@ -20,6 +22,7 @@
         behavior: "smooth",
       });
     }
+  });
 
     // Form submission handling
     const form = document.querySelector("#contact-box form");
@@ -75,5 +78,4 @@
     registerBtn.addEventListener("click", function () {
       window.location.href = "https://forms.gle/w1XZWim3oTgB88qt5";
     });
-  });
-})();
+  })();

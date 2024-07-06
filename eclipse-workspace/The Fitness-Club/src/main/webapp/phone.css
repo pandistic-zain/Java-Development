@@ -3,6 +3,9 @@
   flex-direction: column;
 }
 
+header {
+  position:static;
+}
 #navbar ul li a {
   font-size: 1rem;
   padding: 0px 14px;
@@ -70,23 +73,9 @@
   margin-bottom: 35px;
 }
 .admin-area {
-  display: none;
-  /* margin-top: 10px;
-  margin-right: 0;
-  justify-content: center; 
-*/
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
 }
-/* 
-#loginBtn,
-#registerBtn {
-  margin: 10px 0;
-} */
-
-/* Adjust styles for the login section on small screens
-#loginSection {
-  width: 80%;
-}
-
-#loginSection form {
-  width: 100%;
-} */

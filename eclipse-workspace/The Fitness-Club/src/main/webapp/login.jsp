@@ -38,7 +38,7 @@
               <input type="submit" value="Login" class="btn" />
             </div>
           </form>
-          <p><a href="index.jsp">Back to Home</a></p>
+          <p><a href="index.html">Back to Home</a></p>
 
         <%-- Display error message if login fails --%>
         <% String error = request.getParameter("error");
