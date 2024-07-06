@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DataBaseUtilities {
-    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/signIn_signUp";
+    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/Authenticator ";
     private static final String JDBC_USER = "pandistic._.zain";
     private static final String JDBC_PASSWORD = "_Zain_56";
 

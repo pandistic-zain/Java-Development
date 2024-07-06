@@ -33,11 +33,11 @@
 				<li class="item"><a href="#Contact-Section">Suggestion</a></li>
 				<li class="item"><a href="#Partners-Section">Our Partners</a></li>
 			</ul>
-		<div class="admin-area">
-    <form action="logout" method="post">
-        <button type="submit" id="logoutBtn">Log Out</button>
-    </form>
-</div>
+			<div class="admin-area">
+				<form action="logout" method="post">
+					<button type="submit" id="logoutBtn">Log Out</button>
+				</form>
+			</div>
 
 		</nav>
 	</header>
